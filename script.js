@@ -11,14 +11,13 @@ window.onload = () => {
         if(nome.value.length === 0) {
             validacaoOk = false;
             validacaoNome.innerHTML = 'Este campo é obrigatório';
-        }
-        validar();
+        }       
     };
-
+       
     //botão enviar
-//     const enviar = (idBotao) => {        
-//         const botao = document.getElementById(idBotao);
-//         botao.addEventListener('click', validar);
-//     };
-//    enviar('botao');
+    const enviar = (idBotao) => {        
+        const botao = document.getElementById(idBotao);
+        botao.addEventListener('click', validar);
+    };
+   enviar('botao');
 };
