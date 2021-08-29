@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    
+    <title>Laboratório</title>
+</head>
+<body>
+  <div class="container"></div>
+        <div class="row">
+    <header>
+        <div class="h-1">
+          <h1>Laboratório de Microbiologia</h1>
+        </div>
+          <nav>
+            <ul>
+              <li>Home</li>
+              <li>Serviços</li>
+              <li>Pesquisa</li>
+              <li>Contato</li>
+            </ul>
+          </nav>         
+     </header>
+    <section>
+      <div class="row">
+          <div class="col-3">
+            <h3>Micro-organismos de referência</h3>
+            <div class="img">
+            <a href="escherichia.html" target="_blank">  <img src="images/bacteria1.jpg"  alt="..." id="modal-click"> </a>
+            </div> 
+            <span class="">Bactéria</span>
+            <div class="img">
+                <img src="images/fungo.jpg" class="img-thumbnail" alt="...">
+            </div> 
+             <span class="">Fungos filamentosos e Leveduras</span>      
+            <div class="img">
+              <img src="images/virus.jpg" class="img-thumbnail" alt="...">
+           </div> 
+             <span class="">Vírus</span>   
+            <div class="modal-resumo">
+              <span>-- </span>
+            </div>
+          </div>          
+
+          <div class="col-5">
+            <h3>Conheça nosso laboratório</h3>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/lab1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/lab2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/lab3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>                
+          </div>
+
+          <div class="col-3">
+            <h3>Entre em contato</h3>
+            <div class="solicitacao">
+              <form>
+                <div class="contato-input">
+                  <label for="nome">Nome:</label>
+                  <input type="text" id="nome" name="nome" placeholder="nome">
+                  <div id="validacaoNome" class="validacaoNome"></div>
+                </div>
+                <div class="contato-input">
+                  <label for="email">Email:</label>
+                  <input type="email" name="email" placeholder="email" id="email">
+                  <div id="validacaoEmail" class="validacaoEmail"></div>
+                </div>                  
+                <div class="contato-input">
+                  <label for="tel">Telefone:</label>
+                  <input type="text" name="telefone" placeholder="Telefone" id="tel">
+                </div> 
+              
+                <div class="contato-input"> 
+                  <div>Solicitação</div>
+                  <input type="radio" id="html" name="fav_language" value="HTML">
+                  <label for="duvida">Dúvida</label><br>
+                  <input type="radio" id="css" name="fav_language" value="CSS">
+                  <label for="sevico">Serviço</label><br>
+                  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                  <label for="reclamacao">Reclamação</label>
+                </div>           
+
+                <div class="contato-input">
+                  <textarea name="solicitaco" placeholder="Descreva sua solicitação"></textarea> 
+                </div>
+
+                <button onclick="validar()">Enviar</button>
+
+              </form>                
+            </div>                
+          </div>
+        </div>
+      </div>   
+    </section>
+   
+    <footer>
+      Links adicionais:
+      <a href="www.atcc.org">ATCC</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
