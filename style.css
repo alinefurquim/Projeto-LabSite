@@ -29,21 +29,22 @@ header {
   }
 
   nav ul li:hover {
-    color: rgb(16, 17, 19);
+    color: rgb(248, 250, 252);
    }
 
 
  img {
     position: relative; 
-    cursor: pointer;    
+    cursor: pointer; 
+    margin-left: 50px;
+    width: 50%;
+    height: 50%; 
+    display: block;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: 10% 50%;
   }
 
-  .img img{
-    margin: 10px 10px 10px;
-    width: 50%;
-    height: 50%;
-    
-  }
   
   h3 {
     text-align: center;
@@ -64,7 +65,7 @@ header {
   }
 
   .img-nome {
-     margin: 10px 30px 30px;
+     margin-left: 50px;
    }
 
   .h-1 {
