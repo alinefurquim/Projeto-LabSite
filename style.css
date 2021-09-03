@@ -2,17 +2,17 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-   
+    font-family: 'EB Garamond', serif;
   }
 
   section {
     background-color: rgb(139, 202, 238);
   }
 
-header {
+  header {
     background-color: rgb(77, 79, 231);
     width: 100%;
-    height: 150px;      
+    height: auto;      
   }
 
   nav ul {
@@ -25,7 +25,7 @@ header {
     display: block;
     text-transform:uppercase;
     float: left;
-    margin: 0 10px 10px 10px;
+    margin: 0 10px 10px 30px;
   }
 
   nav ul li:hover {
@@ -33,7 +33,7 @@ header {
    }
 
 
- img {
+ .ref {
     position: relative; 
     cursor: pointer; 
     margin-left: 50px;
@@ -44,20 +44,29 @@ header {
     object-fit: cover;
     object-position: 10% 50%;
   }
-
   
   h3 {
     text-align: center;
-    font-family: 'EB Garamond', serif;
   }
 
   form {
-    text-align: left;
+    width: 250px;
+    margin: 20px;
+  }
+
+  input {
+    width: 250px;
   }
 
   textarea {
-    width: 300px;
+    width: 250px;
     height: 200px;
+  }
+
+  button {
+    margin: 150px;
+    margin-right: 50px;
+    width: 250px;    
   }
 
   footer {
@@ -74,14 +83,10 @@ header {
     padding: 10px;
   }
 
-  .solicitacao {
-    text-align: start;
-    margin: 20px;
-  }
-
   .contato-input {
     margin-top: 10px;
     margin-bottom: 20px;
+    text-align: left;    
   } 
 
   .validacaoNome {
@@ -111,4 +116,13 @@ header {
     color: #FFF;
     padding: 4px;
     border-radius: 5px;
+  }
+
+  @media (max-width: 600px) {
+    h1 {
+      text-align: left;
+    }
+    nav ul { 
+      float: left;
+    }
   }

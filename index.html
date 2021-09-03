@@ -33,15 +33,15 @@
           <div class="col-3">
             <h3>Micro-organismos de referência</h3>
             <div>
-              <img src="images/bacteria1.jpg"  class="img-thumbnail" alt="..." id="modal-click"> </a>
+              <img src="images/bacteria1.jpg"  class="img-thumbnail ref" alt="..." id="modal-click"> </a>
             </div> 
             <span class="img-nome">Bactéria</span>
             <div class="img">
-                <img src="images/fungo.jpg" class="img-thumbnail" alt="...">
+                <img src="images/fungo.jpg" class="img-thumbnail ref" alt="...">
             </div> 
              <span class="img-nome">Fungos filamentosos e Leveduras</span>      
             <div class="img">
-              <img src="images/virus.jpg" class="img-thumbnail" alt="...">
+              <img src="images/virus.jpg" class="img-thumbnail ref" alt="..." style="height: 129px;">
            </div> 
              <span class="img-nome" >Vírus</span>   
             <div class="modal-resumo">
@@ -49,7 +49,7 @@
             </div>
           </div>          
 
-          <div class="col-5">
+          <div class="col-5 responsive">
             <h3>Conheça nosso laboratório</h3>
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -76,10 +76,10 @@
 
           <div class="col-3">
             <h3>Entre em contato</h3>
-            <div class="solicitacao">
+            
               <form action="" method="POST" class="form">
                 <div class="contato-input">
-                  <label for="nome">Nome: 
+                  <label for="name">Nome: 
                     <input type="text" id="name" name="name" placeholder="nome" data-rules="required|min=2">
                   </label>
                   <div id="validacaoNome" class="validacaoNome"></div>
@@ -95,17 +95,14 @@
                     <input type="text" name="telefone" placeholder="Telefone" id="tel">
                   </label>
                 </div> 
-              
-                <!-- <div class="contato-input"> 
-                  <div>Solicitação</div>
-                  <input type="radio" id="html" name="fav_language" value="HTML">
-                  <label for="duvida">Dúvida</label><br>
-                  <input type="radio" id="css" name="fav_language" value="CSS">
-                  <label for="sevico">Serviço</label><br>
-                  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-                  <label for="reclamacao">Reclamação</label>
-                </div>            -->
 
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Selecione a sua solicitação</option>
+                  <option value="1">Dúvida</option>
+                  <option value="2">Reclamação</option>
+                  <option value="3">Serviços</option>
+                </select>
+              
                 <div class="contato-input">
                   <textarea name="solicitaco" placeholder="Descreva sua solicitação"></textarea> 
                 </div>
@@ -113,7 +110,7 @@
                 <button type="submit" id="botao">Enviar</button>
 
               </form>                
-            </div>                
+                           
           </div>
         </div>
       </div>   
