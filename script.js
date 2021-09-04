@@ -70,3 +70,15 @@
 
     let form = document.querySelector('.form');
     form.addEventListener('submit', formValidator.handleSubmit);
+
+
+    //Modal
+    function openModal() {
+        let modal = document.querySelector('.modal');
+        modal.style.display = 'block';
+    }
+
+    function closeModal() {
+        let closemodal = document.querySelector('.modal');
+        closemodal.style.display = 'none';
+    }
