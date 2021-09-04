@@ -32,20 +32,23 @@
       <div class="row">
           <div class="col-3">
             <h3>Micro-organismos de referência</h3>
-            <div>
-              <img src="images/bacteria1.jpg"  class="img-thumbnail ref" alt="..." id="modal-click"> </a>
+            <div onclick="openModal()">
+              <img src="images/bacteria1.jpg"  class="img-thumbnail ref" alt="..." class="openModal" >
+              <span  class="img-nome">Bactéria</span>
             </div> 
-            <span class="img-nome">Bactéria</span>
-            <div class="img">
+            <div onclick="openModal()" class="img">
                 <img src="images/fungo.jpg" class="img-thumbnail ref" alt="...">
+                <span class="img-nome">Fungos filamentosos e Leveduras</span> 
             </div> 
-             <span class="img-nome">Fungos filamentosos e Leveduras</span>      
-            <div class="img">
+                 
+            <div onclick="openModal()" class="img">
               <img src="images/virus.jpg" class="img-thumbnail ref" alt="..." style="height: 129px;">
-           </div> 
-             <span class="img-nome" >Vírus</span>   
-            <div class="modal-resumo">
-              <span>-- </span>
+              <span class="img-nome" >Vírus</span>  
+             </div> 
+                            
+            <div class="modal" >
+              <p class="modalP">Aline----</p>
+              <button onclick="closeModal()">Close</button>
             </div>
           </div>          
 
@@ -106,11 +109,8 @@
                 <div class="contato-input">
                   <textarea name="solicitaco" placeholder="Descreva sua solicitação"></textarea> 
                 </div>
-
                 <button type="submit" id="botao">Enviar</button>
-
-              </form>                
-                           
+              </form>                             
           </div>
         </div>
       </div>   
@@ -118,7 +118,8 @@
    
     <footer>
       Links adicionais:
-      <a href="www.atcc.org" target="_blank">ATCC</a>
+      <p><a href="www.atcc.org" target="_blank">ATCC</a></p>
+      <p><a href="www.dsmz.de" target="_blank">DSMZ</a></p>
     </footer>
     <script src="script.js"></script>    
 </body>
